@@ -10,10 +10,236 @@ body{
 }
 .left-section{
     width: 45%;
-    font-size: 2em;
+   
+}
+
+.main-header{
+    font-size: 3em;
     font-weight: 700;
     align-items: center;
     justify-content: center;
+    color: black;
+    
+}
+
+
+ .main-header:hover {
+    transform: scale(1.1);
+    transition: transform 1s ease-out;
+    color: indianred;
+}
+.main-header:not(:hover){
+    transform: scale(1);
+    transition: transform 1s ease-out;
+    color: indianred;
+}
+
+
+h1::after{
+    content: " Chill";
+    position: Bottom;
+    animation: color-typing 10s infinite;
+    transition: 1s;
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+    --color-4: #DBAD4A;
+    --color-5: #ACCFCB;
+    --color-6: #17494D;
+    --color-7: #ACCFCB;
+    --color-8: #E4A9A8;
+    --color-9: #ACCFCB;
+    --color-10: #3D8DAE;
+    --color-11: #DF8453;
+    --color-12: #E4A9A8;
+
+}
+ 
+ @keyframes color-typing {
+    2%{
+        content: '|';
+        color: var(--color-1);
+    }
+    4%{
+        content: 'O|';
+    }
+    6%{
+        content:'Or|';
+        color: var(--color-2);
+    }
+    8%{
+        content:'Ord |';
+        
+    }
+    10%{
+        content:'Order|';
+        color: var(--color-3);
+        
+    }
+    12%{
+        content: 'Order |';
+    }
+    14%{
+        content:'Orde|';
+        color: var(--color-4);
+    }
+    16%{
+        content: 'Ord|';
+    }
+    18%{
+        content:'Or|';
+        color: var(--color-5);
+    }
+    20%{
+        content:'O|'
+    }
+    22%{
+       content:'|' ;
+       color: var(--color-6);
+    }
+    24%{
+        content: 'B|'
+    }
+    26%{ 
+        content:'Bu|';
+        color: var(--color-7);
+    }
+    28%{
+        content:'Buy|';
+    }
+    30%{
+        content: 'Buy |';
+        color: var(--color-8);
+    }
+    32%{
+        content: 'Bu|';
+    }
+    34%{
+        content: "B|";
+        color: var(--color-9);
+    }
+    36%{
+        content: "|";
+
+    }
+    38%{
+        content: "!";
+        color: var(--color-10);
+    }
+    40%{
+        content: "A|";
+
+    }
+    42%{
+        content: "An|";
+        color: var(--color-11);
+
+    }
+    44%{
+        content: "And|";
+
+    }
+    46%{
+        content: "An|";
+        color: var(--color-12);
+
+    }
+    48%{
+        content: "A|";
+
+    }
+    50%{
+        content: "|";
+        color: var(--color-12);
+    }
+    52%{
+        content: "C|";
+    }
+    54%{
+        content: "Ch|";
+        color: var(--color-11);
+    }
+    56%{
+        content: "Chi|"
+    }
+    58%{
+        content: "Chil|";
+        color: var(--color-10);
+    }
+
+
+    60%{
+        content:'Chill |';
+    }
+    87%{
+        content: 'Chil|';
+        color: var(--color-9);
+    }
+    88%{
+        content: 'Chi|';
+        color: var(--color-8);
+    }
+    89%{
+        content: 'Ch|';
+        color: var(--color-7);
+    }
+    90%{
+        content: 'C|';
+        color: var(--color-6);
+    }
+    91%{
+        content: '|';
+        color: var(--color-5);
+    }
+    92%{
+        content: 'S|';
+        color: var(--color-4);
+    }
+    93%{
+        content: 'Sl |';
+        color: var(--color-3);
+    }
+    94%{
+        content: 'Sle|';
+        color: var(--color-1);
+    }
+    95%{
+        content: 'Slee |';
+        color: var(--color-2);
+    }
+    96%{
+        content: 'Sleep |';
+        color: var(--color-1);
+    }
+    97%{
+        content: 'Sleep|';
+        color: var(--color-4);
+    }
+    98%{
+        content: 'Slee |';
+        color: var(--color-9);
+    }
+    99%{
+        content: 'S|';
+        color: var(--color-11);
+    }
+    100%{
+        content: '|';
+        color: var(--color-5);
+    }
+
+}
+
+.order button{
+    background-color: #E02C6D;
+    font-size: 16px;
+    color:honeydew;
+    font-weight: 500;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 40px;
+    cursor: pointer;
+    
 }
 .right-section{
     width: 45%;
@@ -35,4 +261,24 @@ body{
     margin: 40px 10px;
     
     
+}
+.sect-header{
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap:30px;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+.product{
+    width:330px;
+    height: 475px;
+    box-shadow: 5px 5px 15px gray;
+    border-radius: 10px;
 }
