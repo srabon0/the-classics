@@ -27,15 +27,21 @@ body{
 }
 
 ul>li{
+    padding: 15px 10px;
     
-    padding: 10px;
+}
+ul>li:hover{
+    background-color: rgb(230, 58, 195);
+    border-radius: 10px 2px 10px 2px;
+    transition: 1s;
 }
 ul>li>a{
+    align-content: center;
     text-decoration: none;
     color:#3A3A3A;
     font-size: 18px;
     font-weight: 500;
-    margin-left: 15px;
+    margin:0 10px;
     justify-content: space-between;
    
     
@@ -371,7 +377,9 @@ ul>li>a{
 .contact{
     display: flex;
 }
-
+.mid{
+    color: #eb9834;;
+}
 .contact-image{
     width: 45%;
 }
@@ -388,6 +396,7 @@ ul>li>a{
     flex-direction: column;
     width: 80%;
     margin: 5% 20% ;
+    align-items: center;
 }
     
 .contact-form .textform{
@@ -396,11 +405,20 @@ ul>li>a{
     margin-bottom: 20px;
     font-family: inherit;
     outline:lightyellow;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #eb9834;
+    
 }
 .contact-form form button{
     padding: 10px;
     background-color: #eb9834;
     border: none;
+    width: 50%;
+    cursor: pointer;
+    border-radius: 5px;
+    
 
 }
     
