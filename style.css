@@ -458,10 +458,10 @@ footer .social{
 /*==============================================
 ================ MEDIA QUERIES =================
 ================================================*/
-@media only screen and (max-width: 600px) {
+@media (max-width: 480px) {
     .container {
       display: none;
-      grid-template-columns: 1fr; /* make each item span full width */
+      grid-template-columns: 1fr; 
       justify-items: center;
       align-content: center;
     }
@@ -477,11 +477,11 @@ footer .social{
     }
   
     #left {
-      order: 2; /* set this to appear second */
+      order: 2; 
     }
   
     #right {
-      order: 1; /* set this to appear first */
+      order: 1; 
     }
 
     .companies{
@@ -504,7 +504,35 @@ footer .social{
   }
   
  
-  
+/* for tabs */
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: yellow;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .companies{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        align-content: center;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+   
+}
 
     
   
