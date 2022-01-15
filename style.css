@@ -459,16 +459,28 @@ footer .social{
 ================ MEDIA QUERIES =================
 ================================================*/
 @media (max-width: 480px) {
-    .container {
-      display: none;
-      grid-template-columns: 1fr; 
-      justify-items: center;
-      align-content: center;
+    .navigations{
+        display: none;
     }
- 
+    .container {
+      grid-template-columns: 1fr; 
+      
+    }
+    .left-section{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    .container .order button{
+        margin-top:5vh;
+    }
     
     .left-section h1{
-        font-size: 28px;
+        font-size: 25px;
+    }
+    .right-section{
+        display: flex;
     }
     
     .right-section img{
@@ -509,9 +521,20 @@ footer .social{
     body {
         background-color: yellow;
     }
+    .navigations{
+        display: none;
+    }
 
     .container{
-        display: block;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .right-section{
+        width:300px;
+    
+    }
+    .right-section img{
+        width: 100%;
     }
 
     .companies{
@@ -522,8 +545,18 @@ footer .social{
     }
     .products{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 10px;
+        grid-column-gap:10px;
+        justify-content: space-evenly;
 
+    }
+    .product{
+        width:75%;
+        padding:5px;
+    }
+    .product-img img{
+        width: 75%;
     }
 
 
