@@ -9,23 +9,35 @@ body{
 .navigations{
     margin:auto 5%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
+.logo{
+    width: 40%;
+}
+.menu-items{
+    width: 60%;
 }
 
 .menu-items ul{
     display: flex;
     list-style: none;
-    
-   
+
 }
 
+ul>li{
+    
+    padding: 10px;
+}
 ul>li>a{
     text-decoration: none;
     color:#3A3A3A;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     margin-left: 15px;
-    padding: 10px;
+    justify-content: space-between;
+   
     
 }
 .top{
