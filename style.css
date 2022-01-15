@@ -41,11 +41,32 @@ ul>li>a{
    
     
 }
-.top{
+.container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 5%;
 }
+.right-section{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+ 
+}
+.right-section img{
+    width: 440px;
+    height: 414px;
+}
+.left-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.left-section h1{
+    font-size: 52px;
+}
+
 
 .main-header{
     font-size: 2em;
@@ -437,7 +458,53 @@ footer .social{
 /*==============================================
 ================ MEDIA QUERIES =================
 ================================================*/
-@media(max-width: 600px) {
-    body {background: limegreen;}
-  }
+@media only screen and (max-width: 600px) {
+    .container {
+      display: none;
+      grid-template-columns: 1fr; /* make each item span full width */
+      justify-items: center;
+      align-content: center;
+    }
  
+    
+    .left-section h1{
+        font-size: 28px;
+    }
+    
+    .right-section img{
+        width: 257px;
+        height: 257px;;
+    }
+  
+    #left {
+      order: 2; /* set this to appear second */
+    }
+  
+    #right {
+      order: 1; /* set this to appear first */
+    }
+
+    .companies{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-items: center;
+        align-content: center;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+  }
+  
+ 
+  
+
+    
+  
