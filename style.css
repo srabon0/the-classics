@@ -42,17 +42,18 @@ ul>li>a{
     
 }
 .top{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 5%;
 }
 .left-section{
-    
-    position: relative;
-   
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
 }
 
 .main-header{
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 700;
     align-items: center;
     justify-content: center;
@@ -277,18 +278,15 @@ ul>li>a{
     padding: 10px 25px;
     border-radius: 40px;
     cursor: pointer;
-    position: absolute;
-    bottom: 0;
+    
+
     
 }
 
 .right-section{
-    justify-content: center;
-    align-items: center;
+   margin: 5%;
 }
-.right-section img{
-    margin-left: 250px;
-}
+
 .mid-section{
     margin: 5%;
 }
@@ -449,7 +447,7 @@ footer .social{
 ================================================*/
 
 
-@media(max-width:688px) {
+@media(max-width:768px) {
     .navigations{
         display: none;
         grid-template-columns: 1fr;
@@ -560,6 +558,105 @@ footer .social{
 
 
 @media(min-width:688px) and (max-width:992px) {
+
+  
+    .top{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: red;
+        
+    }
+    
+    .left-section{ 
+        
+        
+    }
+    
+    .theheader{
+        font-size: 1.1em;
+        font-weight: 500;
+        color: black;
+        
+    }
+
+  
+    }
+    .right-section{
+        width: 257px;
+        height: 257px;
+        
+    }
+    .right-section img{
+        margin-left:0;
+        margin-top: 40px;
+
+    width: 100%;
+}
+    .mid-section{
+    margin: 5%;
+}
+.order button{
+    background-color: #E02C6D;
+    font-size: 12px;
+    color:honeydew;
+    font-weight: 500;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+
+.companies{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content:center;
+    align-items: center;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-width: 80%;
+}
+
+ /* Company responsive */
+.company {
+    margin: 20px 10px;
+    height: 20px;
+    width: 50px;
+}
+.company img{
+    width: 100%;
+}
+
+/* mid section PRODUCTS */
+
+
+.sect-header{
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 70px;
+
+}
+.products{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+    grid-column-gap:15px;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+/* contact sectio0n */
+.contact{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.contact-form form{
+    margin: 5%;
+}
   
     
     
